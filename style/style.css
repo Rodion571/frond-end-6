@@ -53,19 +53,139 @@ body {
 }
 
 .mini_card img {
-    width: 60%; 
-    height: 60%;
+    width: auto; 
+    height: 37px;
     background-color: #FFB400; 
-    object-fit: cover; 
     border-radius: 50%; 
+    object-fit: contain;
+}
+
+.orange-circle {
+    display: inline-block;
+    width: 40px; 
+    height: 40px;  
+    background-color: var(--orange);  
+    border-radius: 50%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, fill 0.3s;  
+}
+
+.orange-circle:hover {
+    background-color: var(--black);  
+}
+
+.orange-circle:hover svg path {
+    fill: var(--white); 
+}
+
+
+
+.content-wrapper {
+    width: 100%; 
+    box-sizing: border-box;
 }
 
 .line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--orange);
+    margin-top: 20px;
+    display: block;
+}
+
+.category-value-pair {
+    display: flex;
+    justify-content: space-between;
     width: 100%; 
-    height: 2px; 
-    background-color: #FFB400; 
-    margin-top: 20px; 
-    display: block;  
+    padding: 10px 0;
+    
+    box-sizing: border-box;
+}
+
+.category {
+    font-weight: bold;
+    color: var(--black);
+    margin-right: 10px;
+    background-color: #FFB400;
+    border-radius: 25%;
+}
+
+.value {
+    color: #2B2B2B;
+    text-align: right;
+    margin-left: 10px;
+}
+.progress_bar {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px; 
+}
+
+.progress_bar_label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px; 
+}
+
+.progress_bar_value_b{
+    height: 20px; 
+    background-color: var(--orange); 
+    width: 100%; 
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.progress_bar_value_e{
+    height: 20px; 
+    background-color: var(--orange); 
+    width: 80%; 
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.progress_bar_value_s{
+    height: 20px; 
+    background-color: var(--orange); 
+    width: 60%; 
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.category_l{
+    background-color: antiquewhite;
+}
+.progress_bar_value_html{
+    height: 20px; 
+    background-color: var(--orange); 
+    width: 90%; 
+    border-radius: 10px;
+    border: 2px solid black;
+}.progress_bar_value_css{
+    height: 20px; 
+    background-color: var(--orange); 
+    width: 85%; 
+    border-radius: 10px;
+    border: 2px solid black;
+}.progress_bar_value_js{
+    height: 20px; 
+    background-color: var(--orange); 
+    width: 80%; 
+    border-radius: 10px;
+    border: 2px solid black;
+}.progress_bar_value_php{
+    height: 20px; 
+    background-color: var(--orange); 
+    width: 75%; 
+    border-radius: 10px;
+    border: 2px solid black;
+}.progress_bar_value_wp{
+    height: 20px; 
+    background-color: var(--orange); 
+    width: 85%; 
+    border-radius: 10px;
+    border: 2px solid black;
 }
 .right-menu {
     width: 970px;
